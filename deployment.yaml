@@ -18,7 +18,7 @@ spec:
         app: flaskdemo
     spec:
       containers:
-      - image: barjack/devops-learning:1
+      - image: barjack/devops-learning:latest
         name: flaskdemo
         resources: {}
 status: {}
