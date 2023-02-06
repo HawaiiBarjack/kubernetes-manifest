@@ -16,7 +16,7 @@ node {
                         sh "git config user.name hawaiibarjack"
                         //sh "git switch master"
                         sh "cat deployment.yaml"
-                        sh "sed -i 's+barjack/devops-learning.*+barjack/devops-learning:${env.BUILD_NUMBER}+g' deployment.yaml"
+                        sh "sed -i '' 's+barjack/devops-learning.*+barjack/devops-learning:${env.BUILD_NUMBER}+g' deployment.yaml"
                         sh "cat deployment.yaml"
                         sh "git add ."
                         sh "git commit -m 'Triggered Build: ${env.BUILD_NUMBER}'"
